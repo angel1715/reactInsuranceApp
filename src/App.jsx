@@ -5,6 +5,7 @@ import Login from "./insurance/login.jsx";
 import UserInfo from "./insurance/userInfo.jsx";
 import FileClaim from "./insurance/fileClaim.jsx";
 import Services from "./insurance/services.jsx";
+import About from "./insurance/about.jsx";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/file-claim" element={<FileClaim />} />
           <Route exact path="/userInfo" element={<UserInfo />} />
           <Route exact path="/services" element={<Services />}/>
+          <Route exact path="/about" element={<About/>}/>
         </Routes>
       </BrowserRouter>
     </>

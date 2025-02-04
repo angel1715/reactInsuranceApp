@@ -5,7 +5,7 @@ function Navigation() {
     <div className="nav-container">
       <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container-fluid div1">
-          <a className="navbar-brand text-white fs-3 px-4 logo" href="#">
+          <a className="navbar-brand text-white fs-3 px-4 logo" href="">
             AG Tech Inc
           </a>
           <button
