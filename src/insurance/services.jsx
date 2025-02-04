@@ -3,17 +3,11 @@ import serviceone from "../assets/basic.jpg";
 import servicetwo from "../assets/protection360.jpg";
 import servicethree from "../assets/premium.jpg";
 import Footer from "./footer";
+import Navigation from "./Navigation";
 function Services(){
     return(
         <div className="parent-service-container">
-        <div className="container-fluid bg-dark p-2">
-        <a class="navbar-brand text-white fs-3 px-4 logo" href="/">
-          AG Tech Inc
-        </a>
-        <a className="home-register" href="/">
-          <i class="fa-solid fa-house text-light"></i>
-        </a>
-      </div>
+        <Navigation />
       
       <div className="service-container">
 

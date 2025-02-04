@@ -487,10 +487,6 @@ padding: .1px;
 .claim-submition-check{
     font-size: 25px;
 }
-.pickup-text{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 
 .service-container{
     width: 100%;
@@ -502,7 +498,7 @@ padding: .1px;
 .services-title{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    margin-top: 60px;
+    margin-top: 140px;
     color: rgb(3, 6, 64);
     
 }
@@ -594,7 +590,57 @@ a{
     font-family: Arial, Helvetica, sans-serif
 }
 
+.about-container{
+    padding: .1px;
+    
+}
 
+.about-title{
+    margin-top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 4, 29);
+    font-size: 37px;
+}
+
+.about-title-divider{
+    width: 25%;
+    height: 2px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(19, 2, 80);
+}
+.about-img1{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top:70px;
+    margin-left: 130px;
+    margin-right: -10px;
+    margin-bottom: -80px;
+}
+
+.about-img2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top:70px;
+    margin-left: 130px;
+    margin-right: -10px;
+    margin-bottom: -80px;
+    object-fit: cover;
+}
+.about-img1-container{
+
+    
+}
+.img1-title{
+    display: inline;
+    margin: 130px 70px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
 @media(max-width: 1200px){
     
     .presentation-desc p{
