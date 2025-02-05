@@ -65,7 +65,7 @@ function Login() {
                 id="exampleInputEmail1"
                 className="login-email-input"
                 required="true"
-                onChange={(e) => setEmailLogin(e.target.value)}
+                onChange={(e) => setEmailLogin(e.target.value.trim())}
               />
             </div>
             <div class="mb-3">
@@ -77,7 +77,7 @@ function Login() {
                 id="exampleInputPassword1"
                 className="login-password-input"
                 required="true"
-                onChange={(e) => setPasswordLogin(e.target.value)}
+                onChange={(e) => setPasswordLogin(e.target.value.trim())}
               />
             </div>
 

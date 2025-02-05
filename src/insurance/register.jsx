@@ -31,7 +31,7 @@ function Register() {
   } = user;
 
   const onInputChange = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value });
+    setUser({ ...user, [e.target.name]: e.target.value.trim()});
   };
 
   const onSubmit = async (e) => {
