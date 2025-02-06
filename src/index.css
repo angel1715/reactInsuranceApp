@@ -712,4 +712,8 @@ a{
         height: 150px;
     }
     
+    .form-parent{
+        width: 90%;
+        
+    }
 }
