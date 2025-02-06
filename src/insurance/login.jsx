@@ -45,7 +45,7 @@ function Login() {
           <i class="fa-solid fa-house text-light"></i>
         </a>
       </div>
-      <div className="container-fluid login bg-primary">
+      <div className="login bg-primary">
         <div className="form-login-container bg-light">
           <div className="user-logo-container">
             <div className="user-logo text-center">

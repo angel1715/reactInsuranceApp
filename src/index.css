@@ -38,10 +38,6 @@ img{
     padding: 0;
 }
 
-.navbar-form{
-    min-width: 900px;
-    
-}
 .description-img2{
     display: block;
     width: 200px;
@@ -184,14 +180,14 @@ footer{
 
 .form-parent{
     width: 70%;
-    min-width: 400px;
+    
 }
 
 .form-container{
     height: 100%;
     padding: 30px;
     padding-bottom: 50px;
-   min-width: 400px;
+  
 }
 
 .home-register{
@@ -283,6 +279,8 @@ input[type="radio"]{
 
 .login{
 height: 650px;
+width: 100%;
+
 padding: .1px;
 }
 
@@ -291,7 +289,6 @@ padding: .1px;
     height: 560px;
     margin: 40px auto;
     padding: .1px;
-    min-width: 450px;
 }
 
 .login-email-input, .login-password-input{
@@ -698,6 +695,21 @@ a{
     .get-Covered-btn, .sign-in{
       display: block;
      
+    }
+
+    .slide-img{
+        width: 100%;
+        height: 200px;
+    }
+    
+}
+
+@media(max-width: 600px){
+    
+
+    .slide-img{
+        width: 100%;
+        height: 90px;
     }
     
 }
