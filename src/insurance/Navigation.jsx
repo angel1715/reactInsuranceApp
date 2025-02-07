@@ -5,9 +5,9 @@ function Navigation() {
     <div className="nav-container">
       <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container-fluid div1">
-          <a className="navbar-brand text-white fs-3 px-4 logo" href="">
+          <Link className="navbar-brand text-white fs-3 px-4 logo" to="/">
             AG Tech Inc
-          </a>
+          </Link>
           <button
             className="navbar-toggler bg-white border-none"
             type="button"
@@ -23,23 +23,23 @@ function Navigation() {
           <div className="collapse navbar-collapse div2" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link active text-white px-4 fs-5"
                   aria-current="page"
-                  href="/"
+                  to="/"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white px-4 fs-5" href="/services">
+                <Link className="nav-link text-white px-4 fs-5" to="/services">
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white px-4 fs-5" href="/about">
+                <Link className="nav-link text-white px-4 fs-5" to="/about">
                   About
-                </a>
+                </Link>
               </li>
             </ul>
 
