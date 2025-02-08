@@ -65,6 +65,7 @@ function UserInfo() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
     >
+      {/*
       <div className="container-fluid bg-dark nav-userinfo">
         <a class="navbar-brand text-white fs-3 px-4 logo-userinfo" href="/">
           AG Tech Inc
@@ -82,6 +83,42 @@ function UserInfo() {
           Logout
         </button>
       </div>
+    */}
+
+<nav className="navbar navbar-expand-lg bg-dark">
+        <div className="container-fluid div1">
+          <Link className="navbar-brand text-white fs-3 px-4 logo" to="/">
+            AG Tech Inc
+          </Link>
+          <button
+            className="navbar-toggler bg-white border-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse div2" id="navbarNav">
+           
+            <div className="get-covered">
+              <Link className="btn claim-btn btn-success text-light"
+          onClick={fileclaim}>
+                File a Claim
+              </Link>
+
+              <Link
+                className="btn btn-primary logout" onClick={handleLogout}
+              >
+                Logout
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
 
       <div className="m-4 text-center">
         <h2>Coverage details</h2>
