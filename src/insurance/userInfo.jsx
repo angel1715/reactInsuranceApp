@@ -105,13 +105,13 @@ function UserInfo() {
           <div className="collapse navbar-collapse div2" id="navbarNav">
            
             <div className="get-covered">
-              <Link className="btn claim-btn btn-success text-light"
+              <Link className="btn btn-lg btn-success sign-in"
           onClick={fileclaim}>
                 File a Claim
               </Link>
 
               <Link
-                className="btn btn-primary logout" onClick={handleLogout}
+                className="btn btn-lg btn-primary get-Covered-btn" onClick={handleLogout}
               >
                 Logout
               </Link>
