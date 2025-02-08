@@ -180,10 +180,10 @@ function FileClaim() {
 
             <div className="description-container">
               <label className="mb-2">
-                Please provide a brief description of the incident
+                Description of the incident
               </label>
               <br></br>
-              <textarea></textarea>
+              <textarea cols={30} rows={15}></textarea>
             </div>
 
             <div className="container text-center">
