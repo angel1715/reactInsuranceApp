@@ -36,7 +36,7 @@ function Register() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    const baseUrl = "http://localhost:8080/auth/register";
+    const baseUrl = "https://insurance-app-backend-1c8dc914f428.herokuapp.com/auth/register";
     await axios.post(baseUrl, user);
     navigation("/login");
   };
