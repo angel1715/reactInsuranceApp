@@ -183,7 +183,7 @@ function FileClaim() {
                 Description of the incident
               </label>
               <br></br>
-              <textarea cols={30} rows={15}></textarea>
+              <textarea placeholder="Please provide a brief description of the incident" className="form-control fs-5"></textarea>
             </div>
 
             <div className="container text-center">
