@@ -14,7 +14,7 @@ function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const urlBase = "http://localhost:8080/auth/login";
+    const urlBase = "https://insurance-app-backend-1c8dc914f428.herokuapp.com/auth/login";
     const requestResult = await axios.post(
       `${urlBase}/${emailLogin}/${passwordLogin}`
     );
