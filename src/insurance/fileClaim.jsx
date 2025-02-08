@@ -69,7 +69,8 @@ function FileClaim() {
   };
 
   return (
-    <motion.div>
+    <motion.div initial={{ opacity: 0 }}
+    animate={{ opacity: 1, transition: { duration: 1 } }}>
       <div className="container-fluid bg-dark p-2">
         <a class="navbar-brand text-white fs-3 px-4 logo" href="/">
           AG Tech Inc

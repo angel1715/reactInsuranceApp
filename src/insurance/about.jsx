@@ -7,7 +7,8 @@ import Footer from "./footer";
 import {motion} from "motion/react";
 function About() {
   return (
-    <div className="about-container">
+    <motion.div initial={{ opacity: 0 }}
+    animate={{ opacity: 1, transition: { duration: 1 } }} className="about-container">
       <Navigation />
 
       <h2 className="about-title text-center">who we are</h2>
@@ -64,7 +65,7 @@ function About() {
         </div>
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 export default About;

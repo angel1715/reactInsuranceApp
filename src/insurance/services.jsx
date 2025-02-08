@@ -7,7 +7,8 @@ import Navigation from "./Navigation";
 import {motion} from "motion/react"
 function Services(){
     return(
-        <div className="parent-service-container">
+        <motion.div initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 1 } }} className="parent-service-container">
         <Navigation />
       
       <div className="service-container">
@@ -43,7 +44,7 @@ function Services(){
         
       </div>
       <Footer />
-      </div>
+      </motion.div>
     )
   
 }
