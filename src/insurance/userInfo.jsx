@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { motion } from "motion/react";
-import { a, label } from "motion/react-client";
+import {motion} from "motion/react";
 import axios from "axios";
 function UserInfo() {
   const [usuarios, setUsuarios] = useState({});

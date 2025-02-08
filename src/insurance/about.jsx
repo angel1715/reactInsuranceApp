@@ -4,7 +4,7 @@ import serviceone from "../assets/basic.jpg";
 import servicetwo from "../assets/protection360.jpg";
 import servicethree from "../assets/premium.jpg";
 import Footer from "./footer";
-
+import {motion} from "motion/react";
 function About() {
   return (
     <div className="about-container">

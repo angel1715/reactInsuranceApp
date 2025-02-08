@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
+import { motion } from "motion/react";
 function FileClaim() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -69,7 +69,7 @@ function FileClaim() {
   };
 
   return (
-    <>
+    <motion.div>
       <div className="container-fluid bg-dark p-2">
         <a class="navbar-brand text-white fs-3 px-4 logo" href="/">
           AG Tech Inc
@@ -194,7 +194,7 @@ function FileClaim() {
           </form>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
 export default FileClaim;

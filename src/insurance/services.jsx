@@ -4,6 +4,7 @@ import servicetwo from "../assets/protection360.jpg";
 import servicethree from "../assets/premium.jpg";
 import Footer from "./footer";
 import Navigation from "./Navigation";
+import {motion} from "motion/react"
 function Services(){
     return(
         <div className="parent-service-container">
