@@ -38,7 +38,7 @@ function FileClaim() {
   const onSubmit = async (e) => {
     e.preventDefault();
     
-    const baseURL = "http://localhost:8080/auth/fileClaim";
+    const baseURL = "https://insurance-app-backend-1c8dc914f428.herokuapp.com/auth/fileClaim";
     const requestResult = await axios.put(`${baseURL}/${passwordLogin}`, user);
     const usuario = requestResult.data;
     
