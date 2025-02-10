@@ -472,6 +472,7 @@ padding: .1px;
 .message-coitainer{
     width: 320px;
     padding: 20px;
+    border: 2px solid rgb(75, 210, 21);
     border-radius: 8px;
     position: sticky;
     top: 0;
