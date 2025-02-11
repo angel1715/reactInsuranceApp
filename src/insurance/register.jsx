@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import axios from "axios";
 import { input } from "motion/react-client";
-const [value, setValue] = useState("");
+const [valor, setValue] = useState("");
 function Register() {
   let navigation = useNavigate();
 
@@ -33,7 +33,7 @@ function Register() {
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value.trim()});
-    handleChange(e);
+   
   };
 
   const onSubmit = async (e) => {
@@ -109,8 +109,8 @@ function Register() {
                 min={0}
                 maxLength={10}
                 required="true"
-                value={phone}
-                onChange={(e) => onInputChange(e)}
+                value={valor}
+                onChange={(e) => handleChange(e)}
                 name="phone"
                 
               />
