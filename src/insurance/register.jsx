@@ -3,7 +3,6 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import axios from "axios";
 import { input } from "motion/react-client";
-const [valor, setValue] = useState("");
 function Register() {
   let navigation = useNavigate();
 
@@ -33,7 +32,6 @@ function Register() {
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value.trim()});
-   
   };
 
   const onSubmit = async (e) => {
@@ -95,17 +93,16 @@ function Register() {
                 Phone Number
               </label>
               <input
-                type="text" inputMode="numeric" pattern="[0-9]*"
+                type="text"
                 className="form-control fs-5"
                 id="phone-number"
                 max={10}
                 min={0}
                 maxLength={10}
                 required="true"
-                value={valor}
-                onChange={(e) => handleChange(e)}
+                value={phone}
+                onChange={(e) => onInputChange(e)}
                 name="phone"
-                
               />
             </div>
 
