@@ -93,7 +93,7 @@ function Register() {
                 Phone Number
               </label>
               <input
-                type="text"
+                type="text" inputMode="numeric" pattern="[0-9]*"
                 className="form-control fs-5"
                 id="phone-number"
                 max={10}
