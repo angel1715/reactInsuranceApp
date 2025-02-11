@@ -31,7 +31,7 @@ function FileClaim() {
   const displayMessage = () => {
 
     if(buttonRef.current){
-      buttonRef.current.disable = true;
+      buttonRef.current.disabled = true;
     }
 
     setStyle({ display: "block" });
