@@ -43,13 +43,6 @@ function Register() {
     navigation("/login");
   };
 
-  const handleChange = (e) => {
-    const newValue = e.target.value;
-    if (/^\d*$/.test(newValue)) { // Solo números
-      setValue(newValue);
-    }
-  };
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
