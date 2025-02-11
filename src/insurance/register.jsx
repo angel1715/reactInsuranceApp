@@ -5,7 +5,7 @@ import axios from "axios";
 import { input } from "motion/react-client";
 function Register() {
   let navigation = useNavigate();
-  const [value, setValue] = useState("");
+  const [valor, setValue] = useState("");
   const [user, setUser] = useState({
     fName: "",
     lName: "",
@@ -106,7 +106,7 @@ function Register() {
                 min={0}
                 maxLength={10}
                 required="true"
-                value={phone}
+                value={valor}
                 onChange={(e) => handleChange(e)}
                 name="phone"
               />
