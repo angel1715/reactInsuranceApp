@@ -30,10 +30,6 @@ function FileClaim() {
   //function to display the message, when the claim is submitted
   const displayMessage = () => {
 
-    if(buttonRef.current){
-      buttonRef.current.disabled = true;
-    }
-
     setStyle({ display: "block" });
     setTimeout(function () {
       window.history.back();
@@ -53,6 +49,9 @@ function FileClaim() {
       
     }
     else{
+      if(buttonRef.current){
+        buttonRef.current.disabled = true;
+      }
       displayMessage();
     }
     
