@@ -5,7 +5,7 @@ import axios from "axios";
 import { input } from "motion/react-client";
 function Register() {
   let navigation = useNavigate();
-
+  const [value, setValue] = useState("");
   const [user, setUser] = useState({
     fName: "",
     lName: "",
@@ -39,6 +39,12 @@ function Register() {
     const baseUrl = "https://insurance-app-backend-1c8dc914f428.herokuapp.com/auth/register";
     await axios.post(baseUrl, user);
     navigation("/login");
+  };
+  const handleChange = (e) => {
+    const newValue = e.target.value;
+    if (/^\d*$/.test(newValue)) { // Solo números
+      setValue(newValue);
+    }
   };
 
   return (
@@ -101,7 +107,7 @@ function Register() {
                 maxLength={10}
                 required="true"
                 value={phone}
-                onChange={(e) => onInputChange(e)}
+                onChange={(e) => handleChange(e)}
                 name="phone"
               />
             </div>
