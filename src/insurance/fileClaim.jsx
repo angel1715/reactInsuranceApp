@@ -9,7 +9,7 @@ function FileClaim() {
   const [usuarios, setUsuarios] = useState(user);
   const [message, setMessage] = useState("Claim Submitted Successfully");
   const [style, setStyle] = useState({});
-
+  const buttonRef = useRef(null);
   const handleLogin = async () => {
     const urlBase = "http://localhost:8080/auth/login";
     const requestResultLogin = await axios.post(
@@ -29,6 +29,11 @@ function FileClaim() {
 
   //function to display the message, when the claim is submitted
   const displayMessage = () => {
+
+    if(buttonRef.current){
+      buttonRef.current.disable = true;
+    }
+
     setStyle({ display: "block" });
     setTimeout(function () {
       window.history.back();
@@ -188,7 +193,7 @@ function FileClaim() {
             </div>
 
             <div className="container text-center">
-              <button type="submit" class="btn btn-dark submit">
+              <button type="submit" class="btn btn-dark submit" ref={buttonRef}>
                 Submit
               </button>
             </div>
