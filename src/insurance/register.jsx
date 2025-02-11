@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import axios from "axios";
 import { input } from "motion/react-client";
+const [value, setValue] = useState("");
 function Register() {
   let navigation = useNavigate();
 
@@ -32,6 +33,7 @@ function Register() {
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value.trim()});
+    handleChange(e);
   };
 
   const onSubmit = async (e) => {
@@ -39,6 +41,13 @@ function Register() {
     const baseUrl = "https://insurance-app-backend-1c8dc914f428.herokuapp.com/auth/register";
     await axios.post(baseUrl, user);
     navigation("/login");
+  };
+
+  const handleChange = (e) => {
+    const newValue = e.target.value;
+    if (/^\d*$/.test(newValue)) { // Solo números
+      setValue(newValue);
+    }
   };
 
   return (
@@ -103,6 +112,7 @@ function Register() {
                 value={phone}
                 onChange={(e) => onInputChange(e)}
                 name="phone"
+                
               />
             </div>
 
